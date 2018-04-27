@@ -14,17 +14,29 @@ https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/Lyft_Challenge/Trainin
 
 #### Run python client
 
+
+- Auto mode
 ```
-python client_example.py --autopilot --images-to-disk
+$ python client_example.py -a -i
 ```
-
-
-
-#### Run with fixed time-step
-
+- Manual mode
 ```
-CarlaUE4.exe -benchmark -fps=5
+$ python manual_control -a
 ```
 
 
+
+#### Run Simulator with fixed time-step
+
+```
+CarlaUE4.exe -windowed -ResX=800 -ResY=600 -benchmark -fps=5 -carla-server
+```
+
+
+
+##### Reference:
+
+CARLA Simulator https://github.com/carla-simulator/carla
+
+CARLA Simulator Document http://carla.readthedocs.io/en/latest/
 
