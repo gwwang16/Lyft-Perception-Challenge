@@ -1,3 +1,6 @@
-data
+data/*
 train
+model/*
 .ipynb_checkpoints
+.vscode
+code22
